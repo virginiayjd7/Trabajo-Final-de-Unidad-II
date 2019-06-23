@@ -87,7 +87,7 @@ Dia a día el manejo de la información se hace más complejo; diferentes factor
 \subsection{Bases de datos relacional}
 	          \begin{itemize}
 		\item Desde su definición vemos que una base de datos puede ser relacional si cumple con algo conocido como el modelo relacional.
-                     \item En la definición de modelo relacional nos podemos quedar con la idea de tablas que tienen columnas para describir los datos que están relacionados entre si.
+                     \item En la definición de modelo relacional nos podemos quedar con la idea de tablas que tienen columnas para describir los datos que están relacionados entre si.\cite{comparison}
 		\item Ejemplo modelo relacional:\cite{Nicolas}
                      \begin{center}
 		\includegraphics[width=9cm]{./Imagenes/1}
@@ -188,10 +188,10 @@ La cantidad de información manejada por las comunidades, redes sociales, buscad
 \subsection{Comparación}
 \subsection{Documental}
  La popularidad del término "base de datos orientada a documentos" o "almacén de documentos" ha crecido a la par con el uso del término NoSQL.\\
-\\ Una base de datos NoSQL documental sirve para gestionar información orientada a documentos o datos semi-estructurados, que se almacenarán en forma de documento.
+\\ Una base de datos NoSQL documental sirve para gestionar información orientada a documentos o datos semi-estructurados, que se almacenarán en forma de documento.\cite{tesis}
 \\\\Normalmente los documentos se estructuran dentro de una serie de contenedores llamadas colecciones (en inglés “collections”) que son proporcionados por el sistema gestor documental. Estas utilizan punteros para el acceso de la información almacenada en la base de datos, esto se realiza sin la ayuda de una estructura entidad relación predeterminada, como en el caso de las bases de datos relacionales.\\
 La búsqueda de la información se realiza con base al contenido del documento. \\\\
-Las codificaciones más habituales de estos documentos suelen ser XML, YAML o JSON, pero también se pueden almacenar en formato Word o PDF. Las bases de datos de tipo documental son una forma moderna de almacenar datos en formato JSON en lugar de filas y columnas como en las bases de datos relacionales; y esto permite expresar los datos en su forma natural. \\\\
+Las codificaciones más habituales de estos documentos suelen ser XML, YAML o JSON, pero también se pueden almacenar en formato Word o PDF. \cite{proyecto} Las bases de datos de tipo documental son una forma moderna de almacenar datos en formato JSON en lugar de filas y columnas como en las bases de datos relacionales; y esto permite expresar los datos en su forma natural. \\\\
 \begin{center}
 	\includegraphics[width=8cm]{./Imagenes/documental1}
 \end{center}	
@@ -212,14 +212,15 @@ En la imagen podemos ver un ejemplo de un documento de tipo JSON describe un lib
 		\item Curva de aprendizaje: al ser una tecnología relativamente nueva, esto representa para algunas personas un obstáculo en aprender la utilización de las bases de datos NoSQL
 		\item Costo-beneficio: es uno de los factores más importantes, debido al hecho de comparar si los beneficios que se obtendrán son mayores a los costos de implementarlo.                     
 \end{itemize}
-\subsection{Clave-Valor}
+\textbf{Bases de Datos Documental más conocidas :}
 \begin{itemize}
-
-                     \item Las bases de datos de clave/valor guardan valores en formato de diccionario o hash utilizando una clave como índice y su valor.\cite{Nicolas}
-                     \begin{center}
-		\includegraphics[width=6cm]{./Imagenes/30}
-		\end{center}	
-	          \end{itemize}
+		\item Amazon DocumentDB (compatible con MongoDB): Servicio de base de datos de documentos rápido, escalable, de alta disponibilidad y completamente administrado que es compatible con cargas de trabajo de MongoDB.
+		\item MongoDB : Base de datos no relacional de código abierto que ofrece soporte para sistemas de almacenamiento de estilo JSON orientados a documentos.
+		\item Couchbase : Plataforma de datos de clase empresarial Couchbase incluye Couchbase Server y Couchbase Mobile, y ha sido diseñada para aprovechar toda la potencia de las aplicaciones móviles, IoT y web. 
+		\item RavenDB:  Base de datos orientada a documentos de código abierto escrito en .NET, ofrece un modelo de datos flexible, diseñado para hacer frente a los requerimientos provenientes de los sistemas.                     
+\end{itemize}
+\subsection{Clave-Valor}
+Los sistemas de clave-valor prometen un rendimiento excelente para volúmenes de datos muy grandes, a cambio de ser muy simples y renunciar a funcionalidades que tenemos en otros sistemas como la verificación intrínseca de la integridad de datos, llaves extranjeras y disparadores. Las validaciones de los datos se delegan completamente en la aplicación cliente, siendo la base de datos, simplemente el lugar donde se guardan los datos. No se verifican integridades, no se comprueban referencias cruzadas, todo esto se ha de implementar a nivel de aplicación, en el código del cliente.
 
 \subsection{Grafos}
 \begin{itemize}
