@@ -220,8 +220,28 @@ En la imagen podemos ver un ejemplo de un documento de tipo JSON describe un lib
 		\item RavenDB:  Base de datos orientada a documentos de código abierto escrito en .NET, ofrece un modelo de datos flexible, diseñado para hacer frente a los requerimientos provenientes de los sistemas.                     
 \end{itemize}
 \subsection{Clave-Valor}
-Los sistemas de clave-valor prometen un rendimiento excelente para volúmenes de datos muy grandes, a cambio de ser muy simples y renunciar a funcionalidades que tenemos en otros sistemas como la verificación intrínseca de la integridad de datos, llaves extranjeras y disparadores. Las validaciones de los datos se delegan completamente en la aplicación cliente, siendo la base de datos, simplemente el lugar donde se guardan los datos. No se verifican integridades, no se comprueban referencias cruzadas, todo esto se ha de implementar a nivel de aplicación, en el código del cliente.
-
+Las bases de datos clave – valor, llamadas tablas también, se estructuran almacenando la información como si de un diccionario se tratara. \\\\ 
+Esta moderna forma de almacenamiento clave – valor se caracterizan por tener una elevada escalabilidad y un rendimiento muy bueno para volúmenes de datos muy grandes,  a cambio de ser muy simples y renunciar a funcionalidades que tenemos en otros sistemas como la verificación intrínseca de la integridad de datos, llaves extranjeras y disparadores. \\\\
+En las BD de clave valor existen los“contenedores”, y dentro de ellos se pueden almacenar tantos pares clave-valor como se desee. \\\\ Las validaciones de los datos se delegan completamente en la aplicación cliente, siendo la base de datos, simplemente el lugar donde se guardan los datos. No se verifican integridades, no se comprueban referencias cruzadas, todo esto se ha de implementar a nivel de aplicación, en el código del cliente.\\\\
+\textbf{Características :}
+\begin{itemize}
+		\item Una base de datos clave-valor almacena datos como un conjunto de pares clave-valor en los que una clave sirve como un identificador único.
+		\item  Tanto las claves como los valores pueden ser cualquier cosa, desde objetos simples hasta objetos compuestos complejos. 
+		\item Las bases de datos clave-valor son altamente divisibles.
+		\item Permiten el escalado horizontal a escalas que otros tipos de bases de datos no pueden alcanzar.                
+\end{itemize}
+  \begin{center}
+	\includegraphics[width=8cm]{./Imagenes/clave1}
+\end{center}	
+En la imagen podemos ver un diagrama de datos almacenados como pares clave-valor en DynamoDB.\cite{imagen2}\\\\
+\textbf{Bases de Datos de Clave-Valor más conocidas :}
+\begin{itemize}
+		\item DynamoDB : El servicio de Amazon permite únicamente crear nuevas tablas en las que alojar los datos, e interactuar con ellas mediante tus aplicaciones a través de APIs.
+		\item Redis : Base de datos en memoria de conjuntos clave – valor, que además permite persistir los datos que residen en memoria a disco.
+		\item Apache Cassandra : Base de datos no relacional de alto rendimiento utilizada comúnmente.
+		\item RavenDB:  Base de datos orientada a documentos de código abierto escrito en .NET, ofrece un modelo de datos flexible, diseñado para hacer frente a los requerimientos provenientes de los sistemas.                     
+\end{itemize}
+Los almacenes de llaves valor son útiles para operaciones sencillas, que se basan solo en los atributos clave. Su objetivo es facilitar el acceso a datos.\\\\
 \subsection{Grafos}
 \begin{itemize}
 		\item Estas bases de datos utilizan el modelo de Grafos
@@ -252,6 +272,7 @@ Los sistemas de clave-valor prometen un rendimiento excelente para volúmenes de
 	\begin{itemize}
 		\item NoSQL permite el manejo de grandes volúmenes de datos y la posibilidad de tener un sistema distribuido.
 		\item Las características de las bases de datos NoSQL responden a las necesidades actuales de las diferentes organizaciones, por lo que son una alternativa debido a su capacidad y a la velocidad.
+		\item La integración de ambos, NoSQL y bases de datos relacionales, es un área que debería ser explorada. Las base de datos NoSQL comercializa funciones de confiabilidad y consistencia para un rendimiento y proceso de escalabilidad extremo, convirtiendolo en una solución especializada, ya que el número de aplicaciones que pueden depender de las bases de datos NoSQL sigue siendo limitado.
 	\end{itemize}
 
 
