@@ -71,30 +71,30 @@ Dia a día el manejo de la información se hace más complejo; diferentes factor
 %-----------------------------------------------------------------
 \section{Marco Teórico}\label{sec:3}
 \subsection{Base de datos}
-	\begin{itemize}
+	          \begin{itemize}
 		\item Una base de datos es una colección de datos organizados según un determinado criterio
 		\item Estos datos se pueden leer, crear, actualizar y borrar
 		\item También existen motores de base de datos que nos permiten hacer todas estas operaciones de forma más fácil
-	\end{itemize}
+	          \end{itemize}
 \subsection{Tipos de base de datos}
-	\begin{itemize}
+	          \begin{itemize}
 		\item Existen distintos tipos de bases de datos que se utilizan para solucionar distintos tipos de problemas
                      \item Dentro de la gran familias de bases de datos podemos encontrar las del tipo base de datos relacionales y las no relacionales
 		\item Las bases de datos relacionales se conocen generalmente como las SQL
 		\item Las no relacionales se conocen como NoSQL
 		\item Cada tipo de base de datos tiene beneficios y contras a la hora de almacenar, leer, actualizar o borar los datos
-	\end{itemize}
+	           \end{itemize}
 \subsection{Bases de datos relacional}
-	\begin{itemize}
+	          \begin{itemize}
 		\item Desde su definición vemos que una base de datos puede ser relacional si cumple con algo conocido como el modelo relacional.
                      \item En la definición de modelo relacional nos podemos quedar con la idea de tablas que tienen columnas para describir los datos que están relacionados entre si.
 		\item Ejemplo modelo relacional:
                      \begin{center}
 		\includegraphics[width=7cm]{./Imagenes/1}
 		\end{center}	
-	\end{itemize}
+	          \end{itemize}
 \subsection{Modelo NoSQL}
-	\begin{itemize}
+	           \begin{itemize}
 		\item Se conoce como NoSQL (Not Only SQL) al grupo de bases de datos que no son relacionales
                      \item Dentro de esta clasificación se encuentran las bases de clave/valor, orientadas a documentos, grafos, de grandes columnas .
                      \begin{center}
@@ -105,29 +105,35 @@ Dia a día el manejo de la información se hace más complejo; diferentes factor
                      \begin{center}
 		\includegraphics[width=6cm]{./Imagenes/3}
 		\end{center}	
-	
-	\end{itemize}
+	          \end{itemize}
 %-----------------------------------------------------------------
 \section {Resultados}\label{sec:4}
 \subsection{Creacion de base de datos NoSQL con MongoDB}
-\begin{itemize}
+                     \begin{itemize}
 		\item MongoDB es una base NoSQL orientada a documentos
 		\item Permite guardar documentos en formato de JSON
 		\item Tiene esquema flexible, es decir que podemos cambiar la estructura de nuestros documentos sin ningún problema
                      \item MongoDB está preparado para escalar fácilmente de manera horizontal
                      \item Dado que aprendimos ECMAScript vamos a utilizar un motor de base de datos que nos permite seguir utilizando este lenguaje para guardar nuestros datos.
-  \end{itemize}
-\subsection{Instalar MongoDB}
-\begin{itemize}
+                     \end{itemize}
+\subsection{Instalar MongoDB en Docker}
+                     \begin{itemize}
+                     \item Ingresar sus credenciales creadas en Docker Hub para iniciar sesión en el aplicativo.Ubicar la aplicación PowerShell, ejecutarla como Administrador. En la ventana de comandos de PowerShell escribir lo siguiente.
+                     \begin{center}
+		\includegraphics[width=5cm]{./Imagenes/8}
+		\end{center}	
 		\item Para instalar MongoDB primero tenemos que ejecutar el siguiente codigo.
                      \begin{center}
 		\includegraphics[width=8cm]{./Imagenes/6}
 		\end{center}	
-		\item Vamos a elegir la versión de Community Server
+		\item Instalamos la versión completa de MongoDB
+                      \begin{center}
+		\includegraphics[width=8cm]{./Imagenes/7}
+		\end{center}	
 		\item Seleccionamos Windows.Elegimos la versión Windows Server 2008 R2 64-bits and later, with SSL support x64
                      \item MongoDB está preparado para escalar fácilmente de manera horizontal
                      \begin{center}
-		\includegraphics[width=6cm]{./Imagenes/4}
+		\includegraphics[width=6cm]{./Imagenes/7}
 		\end{center}	
 	          \end{itemize}
 \subsection{Inserción y consulta de datos}
