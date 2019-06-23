@@ -94,6 +94,8 @@ Dia a día el manejo de la información se hace más complejo; diferentes factor
 		\end{center}	
 	          \end{itemize}
 \subsection{Modelo NoSQL}
+Este tipo de Base de datos es la respuesta a la necesidad de gestionar volúmenes masivos de información, de tal manera que surge la base de datos NoSQL, término que fue acuñado a finales de los años 90 y que engloba todas las tecnologías de almacenamiento estructurado que no cumplen el esquema relacional, mayormente usado.\\\\
+La cantidad de información manejada por las comunidades, redes sociales, buscadores, y muchos otros proyectos en el ámbito de la Web es enorme y abrumadora, lo que ha hecho que surjan nuevas arquitecturas de almacenamiento de información, que deben ser de alto rendimiento, escalables y distribuidas.\\\\
 	           \begin{itemize}
 		\item Se conoce como NoSQL (Not Only SQL) al grupo de bases de datos que no son relacionales
                      \item Dentro de esta clasificación se encuentran las bases de clave/valor, orientadas a documentos, grafos, de grandes columnas .
@@ -158,7 +160,33 @@ Dia a día el manejo de la información se hace más complejo; diferentes factor
 \subsection{Inserción y consulta de datos}
 \subsection{Comparación}
 \subsection{Documental}
+ La popularidad del término "base de datos orientada a documentos" o "almacén de documentos" ha crecido a la par con el uso del término NoSQL.\\
+\\ Una base de datos NoSQL documental sirve para gestionar información orientada a documentos o datos semi-estructurados, que se almacenarán en forma de documento.
+\\\\Normalmente los documentos se estructuran dentro de una serie de contenedores llamadas colecciones (en inglés “collections”) que son proporcionados por el sistema gestor documental. Estas utilizan punteros para el acceso de la información almacenada en la base de datos, esto se realiza sin la ayuda de una estructura entidad relación predeterminada, como en el caso de las bases de datos relacionales.\\
+La búsqueda de la información se realiza con base al contenido del documento. \\\\
+Las codificaciones más habituales de estos documentos suelen ser XML, YAML o JSON, pero también se pueden almacenar en formato Word o PDF. Las bases de datos de tipo documental son una forma moderna de almacenar datos en formato JSON en lugar de filas y columnas como en las bases de datos relacionales; y esto permite expresar los datos en su forma natural. \\\\
+\begin{center}
+	\includegraphics[width=8cm]{./Imagenes/documental1}
+\end{center}	
+\textbf{Fundamentos del formato JSON :}
+\begin{itemize}
+		\item Pares de valores clave o atributos :  Con el formato JSON se almacena en un par de valores clave. A estos pares se les llama a veces atributos. Las claves son cadenas simples y los valores pueden ser de cualquier tipo.
+		\item Incrustación de objetos: Los valores incluidos en el par de valores clave también pueden ser otros objetos JSON, lo que permite crear una jerarquía de objetos. Colocar objetos JSON dentro de otro objeto JSON se denomina modelo de datos incrustados en base de datos documentales.
+		\item Matrices: El formato JSON trabaja con un lenguaje de programación natural en todos los lenguajes de programación y estructuras de datos que son las matrices, por lo cual se admite almacenamiento de matrices como valores contra una clave.
+\end{itemize}
+\begin{center}
+	\includegraphics[width=9cm]{./Imagenes/documental2}
+\end{center}	
+.
+\textbf{ Factores que influyen en la aceptación de una BD NoSQL documental :}
+\begin{itemize}
+		\item Adopción de un nuevo paradigma: Este factor de adaptarse al concepto de NoSQL, resulta ser relativamente difícil, ya que la gran mayoría de compañías se encuentran más familiarizadas con las bases de datos relacionales.
+		\item Curva de aprendizaje: al ser una tecnología relativamente nueva, esto representa para algunas personas un obstáculo en aprender la utilización de las bases de datos NoSQL
+		\item Costo-beneficio: es uno de los factores más importantes, debido al hecho de comparar si los beneficios que se obtendrán son mayores a los costos de implementarlo.                     
+\end{itemize}
 \subsection{Clave-Valor}
+
+
 \subsection{Grafos}
 \begin{itemize}
 		\item Estas bases de datos utilizan el modelo de Grafos
